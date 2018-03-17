@@ -28,14 +28,14 @@ if (process.env.NODE_ENV === 'development') {
   const devToolsExtension = window.devToolsExtension;
 
   if (typeof devToolsExtension === 'function') {
-    enhancers.push(devToolsExtension())
+    enhancers.push(devToolsExtension());
   }
 }
 
 const composedEnhancers = compose(
   applyMiddleware(...middleware),
   ...enhancers
-)
+);
 
 const configureStore = () => createStore(rootReducer, initialState, composedEnhancers);
 
