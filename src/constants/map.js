@@ -9,11 +9,9 @@ const TILES_TOKEN = 'pk.eyJ1Ijoia2Fpcm9udnoiLCJhIjoiY2o0Y3h5YmJhMGU1MzJxbXh2dmcz
 const TILES_ENDPOINT = 'https://api.mapbox.com/styles/v1/kaironvz/cj4cxz9nr5n1u2rp53imvn9tu/tiles/256/';
 export const MAP_TILES = `${TILES_ENDPOINT}{z}/{x}/{y}?access_token=${TILES_TOKEN}`;
 
-export const MAP_ATTRIBUTION = '\
-  &copy; \
-  <a href="https://www.mapbox.com/map-feedback/">Mapbox</a> \
-  &copy; \
-  <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+const MAPBOX_COPYRIGHT = '&copy; <a href="https://www.mapbox.com/map-feedback/">Mapbox</a>';
+const OSM_COPYRIGHT = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors';
+export const MAP_ATTRIBUTION = `${MAPBOX_COPYRIGHT} ${OSM_COPYRIGHT}`;
 
 export const MAP_OPTIONS = {
   maxBounds: MAP_BOUNDS,
