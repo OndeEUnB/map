@@ -2,7 +2,7 @@
   "name": "map",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://ondeeunb.github.io/",
+  "homepage": "https://ondeeunb.github.io/map/",
   "dependencies": {
     "history": "^4.7.2",
     "react": "^16.2.0",
