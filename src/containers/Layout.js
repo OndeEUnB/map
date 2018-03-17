@@ -1,6 +1,7 @@
 import React from 'react';
 import {  Link } from 'react-router-dom';
 import Routes from '../routes';
+import Map from './Map';
 
 const App = () => (
   <div>
@@ -10,6 +11,7 @@ const App = () => (
     </div>
 
     <Routes />
+    <Map />
   </div>
 );
 

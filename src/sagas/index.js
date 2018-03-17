@@ -1,7 +1,10 @@
 import { all } from 'redux-saga/effects';
+import map from './map';
 
 function* root() {
-  yield all([]);
+  yield all([
+    map()
+  ]);
 }
 
 export default root;

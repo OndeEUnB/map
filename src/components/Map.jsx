@@ -1,10 +1,12 @@
-import React from 'react';
+import React, { Component } from 'react';
 
-class Map extends React.Component {
+class Map extends Component {
+  componentDidMount() {
+    const { createMap } = this.props;
+    createMap();
+  }
   render() {
-    return (
-      <div>Map</div>
-    );
+    return <div id="map" />;
   }
 }
 
