@@ -1,8 +1,8 @@
 import React from 'react';
-import {  Link } from 'react-router-dom';
-import Routes from '../routes';
+// import {  Link } from 'react-router-dom';
+// import Routes from '../routes';
 import Map from './Map';
-import Sidebar from 'react-sidebar';
+// import Sidebar from 'react-sidebar';
 //
 // const App = () => (
 //   <div>
@@ -36,7 +36,7 @@ class App extends React.Component {
   }
 
   render() {
-    var sidebarContent = <b>Sidebar content</b>;
+    // var sidebarContent = <b>Sidebar content</b>;
 
     // return (
     //   <Sidebar sidebar={sidebarContent}
